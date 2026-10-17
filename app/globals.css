@@ -1,26 +1,61 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+
+  --background: #f5f6f8;
+  --foreground: #1b1c1f;
+  --card: #ffffff;
+  --border: #e1e3e8;
+  --muted-foreground: #6b7280;
+
+  --sidebar: #222326;
+  --sidebar-foreground: #e8e9ec;
+
+  --primary: #c8102e;
+  --primary-foreground: #ffffff;
+
+  --success: #1fa463;
+  --info: #1f5fbf;
+  --warning: #f0a020;
+  --danger: #c8102e;
+
+  --gradient-page: linear-gradient(180deg, #ffffff 0%, #f5f6f8 45%, #eceef2 100%);
+  --gradient-sidebar: linear-gradient(180deg, #2b2c30 0%, #1c1d20 100%);
+  --gradient-primary: linear-gradient(135deg, #d9183a 0%, #a50d26 100%);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-success: var(--success);
+  --color-info: var(--info);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
+  background-color: var(--background);
+  background-image: var(--gradient-page);
+  background-repeat: no-repeat;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
