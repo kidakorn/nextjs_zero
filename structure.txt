@@ -1,0 +1,41 @@
+app 
+Folder PATH listing for volume All
+Volume serial number is 046D-3870
+D:\CODING\AS400_PROJECT\NEXTJS\WEBAPP400\APP
+|   favicon.ico
+|   globals.css
+|   layout.tsx
+|   page.tsx
+|   
++---component
+|   |   Navbar.tsx
+|   |   Sidebar.tsx
+|   |   
+|   +---layout
+|   \---ui
+|           NavLink.tsx
+|           
++---daily-stock-balance
+|       page.tsx
+|       
++---group-package-master
+|       page.tsx
+|       
++---package-summary
+|       page.tsx
+|       
+\---process-master
+        page.tsx
+        
+public 
+Folder PATH listing for volume All
+Volume serial number is 046D-3870
+D:\CODING\AS400_PROJECT\NEXTJS\WEBAPP400\PUBLIC
+    file.svg
+    globe.svg
+    next.svg
+    vercel.svg
+    window.svg
+    
+No subfolders exist 
+
