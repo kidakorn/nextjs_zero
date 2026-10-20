@@ -6,12 +6,12 @@ import React, { ReactNode } from 'react'
 import { useSidebar } from "../SidebarProvider";
 
 const BASE = "flex h-11 items-center gap-3 px-5 text-sm font-medium transition-colors " +
-	"focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-background";
-const ACTIVE = "bg-(image:--gradient-primary) text-background";
-const IDLE = "text-background hover:bg-transparent hover:bg-(image:--gradient-primary) " +
-	"bg-[length:200%_100%] bg-right transition-[background-position] duration-[1500ms] ease-out hover:text-background active:bg-background/20";
-const ICON_ACTIVE = "text-background";
-const ICON_IDLE = "text-background";
+	"focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-base-100";
+const ACTIVE = "bg-(image:--gradient-primary) text-base-100";
+const IDLE = "text-base-100 hover:bg-transparent hover:bg-(image:--gradient-primary) " +
+	"bg-[length:200%_100%] bg-right transition-[background-position] duration-[1500ms] ease-out hover:text-base-100 active:bg-base-100/20";
+const ICON_ACTIVE = "text-base-100";
+const ICON_IDLE = "text-base-100";
 
 type SidebarLinkProps = {
 	href: string;

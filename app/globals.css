@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@plugin "daisyui" {
+  themes: retro --default;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
@@ -10,17 +14,35 @@
   --card: #ffffff;
   --border: #e1e3e8;
   --muted-foreground: #6b7280;
-
   --sidebar: #222326;
   --sidebar-foreground: #e8e9ec;
-
   --primary: #c8102e;
   --primary-foreground: #ffffff;
-
   --success: #1fa463;
   --info: #1f5fbf;
   --warning: #f0a020;
   --danger: #c8102e;
+
+  --color-primary: var(--primary);
+  --color-primary-content: var(--primary-foreground);
+
+  --color-base-100: var(--card);
+  --color-base-200: var(--background);
+  --color-base-300: var(--border);
+  --color-base-content: var(--foreground);
+
+  --color-success: var(--success);
+  --color-success-content: #ffffff;
+  --color-info: var(--info);
+  --color-info-content: #ffffff;
+  --color-warning: var(--warning);
+  --color-warning-content: #1b1c1f;
+  --color-error: var(--danger);
+  --color-error-content: #ffffff;
+
+  --radius-selector: 0rem;
+  --radius-field: 0rem;
+  --radius-box: 0rem;
 
   --gradient-page: linear-gradient(180deg, #ffffff 0%, #f5f6f8 45%, #eceef2 100%);
   --gradient-sidebar: linear-gradient(180deg, #2b2c30 0%, #1c1d20 100%);
@@ -43,15 +65,11 @@
   --color-danger: var(--danger);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+  --background-image-page: var(--gradient-page);
+  --background-image-sidebar-gradient: var(--gradient-sidebar);
+  --background-image-primary-gradient: var(--gradient-primary);
+}
 
 body {
   background-color: var(--background);

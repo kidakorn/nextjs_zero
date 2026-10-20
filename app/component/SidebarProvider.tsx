@@ -33,7 +33,7 @@ export default function SidebarProvider({ children }: { children: React.ReactNod
 
 	return (
 		<SidebarContext.Provider value={{ isOpen, setIsOpen }}>
-			<div className="flex h-screen w-screen overflow-hidden">
+			<div className="flex h-dvh w-full overflow-hidden bg-base-200">
 				{children}
 			</div>
 		</SidebarContext.Provider>

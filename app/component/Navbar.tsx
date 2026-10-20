@@ -5,7 +5,7 @@ const iconClass = "size-5 shrink-0";
 
 function Navbar() {
   return (
-    <header className="flex min-h-8 shrink-0 items-center gap-4 bg-(image:--gradient-sidebar) px-4 text-sm font-medium text-background">
+    <header className="flex min-h-8 shrink-0 items-center gap-4 bg-sidebar-gradient px-4 text-sm font-medium text-background">
       <nav aria-label="Main" className="flex items-center gap-1">
         <NavLink href="/" icon={<LayoutDashboard className={iconClass} aria-hidden="true" />}>
           Dashboard
